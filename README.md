@@ -1,0 +1,1 @@
+Common resources shared between [Volumio Now Playing plugin](https://github.com/patrickkfkan/volumio-now-playing) and [client](https://github.com/patrickkfkan/volumio-now-playing-reactjs-client).

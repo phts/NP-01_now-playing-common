@@ -1,0 +1,1 @@
+{"version":3,"file":"ActionPanelSettings.d.ts","sourceRoot":"","sources":["../../src/config/ActionPanelSettings.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,gBAAgB,EAAE,MAAM,qBAAqB,CAAC;AAEvD,MAAM,WAAW,mBAAmB;IAClC,gBAAgB,CAAC,EAAE,OAAO,CAAC;CAC5B;AAED,eAAO,MAAM,0BAA0B,EAAE,gBAAgB,CAAC,mBAAmB,CAE5E,CAAC"}
