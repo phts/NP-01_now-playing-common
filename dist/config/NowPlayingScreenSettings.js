@@ -2,6 +2,12 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.DefaultNowPlayingScreenSettings = void 0;
 exports.DefaultNowPlayingScreenSettings = {
+    // Track info: visibility
+    trackInfoVisibility: 'default',
+    titleVisibility: true,
+    artistVisibility: true,
+    albumVisibility: true,
+    mediaInfoVisibility: true,
     // Track info: font sizes
     fontSizes: 'auto',
     titleFontSize: '',

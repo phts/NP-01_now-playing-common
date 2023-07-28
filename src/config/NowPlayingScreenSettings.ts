@@ -1,6 +1,13 @@
 import { DockComponentPlacement, ImageFit, CommonSettingsOf, WeatherIconStyle } from './CommonSettings.js';
 
 export interface NowPlayingScreenSettings {
+  // Track info: visibility
+  trackInfoVisibility?: 'default' | 'custom';
+  titleVisibility?: boolean;
+  artistVisibility?: boolean;
+  albumVisibility?: boolean;
+  mediaInfoVisibility?: boolean;
+
   // Track info: font sizes
   fontSizes?: 'auto' | 'custom';
   titleFontSize?: string;
@@ -156,6 +163,13 @@ export interface NowPlayingScreenSettings {
 }
 
 export const DefaultNowPlayingScreenSettings: CommonSettingsOf<NowPlayingScreenSettings> = {
+  // Track info: visibility
+  trackInfoVisibility: 'default',
+  titleVisibility: true,
+  artistVisibility: true,
+  albumVisibility: true,
+  mediaInfoVisibility: true,
+
   // Track info: font sizes
   fontSizes: 'auto',
   titleFontSize: '',

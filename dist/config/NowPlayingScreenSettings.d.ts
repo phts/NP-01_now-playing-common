@@ -1,5 +1,10 @@
 import { DockComponentPlacement, ImageFit, CommonSettingsOf, WeatherIconStyle } from './CommonSettings.js';
 export interface NowPlayingScreenSettings {
+    trackInfoVisibility?: 'default' | 'custom';
+    titleVisibility?: boolean;
+    artistVisibility?: boolean;
+    albumVisibility?: boolean;
+    mediaInfoVisibility?: boolean;
     fontSizes?: 'auto' | 'custom';
     titleFontSize?: string;
     artistFontSize?: string;
