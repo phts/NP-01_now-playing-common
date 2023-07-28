@@ -66,6 +66,7 @@ export interface NowPlayingScreenSettings {
         enabled?: boolean;
         fontSettings?: 'default' | 'custom';
         fontSize?: string;
+        fontSizePercentSymbol?: string;
         fontColor?: string;
         iconSettings?: 'default' | 'custom';
         iconSize?: string;

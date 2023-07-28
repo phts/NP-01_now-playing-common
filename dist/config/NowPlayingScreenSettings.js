@@ -84,6 +84,7 @@ exports.DefaultNowPlayingScreenSettings = {
         enabled: false,
         fontSettings: 'default',
         fontSize: '',
+        fontSizePercentSymbol: '',
         fontColor: '#CCCCCC',
         iconSettings: 'default',
         iconSize: '',

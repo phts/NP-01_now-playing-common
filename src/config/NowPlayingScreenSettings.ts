@@ -101,6 +101,7 @@ export interface NowPlayingScreenSettings {
     enabled?: boolean;
     fontSettings?: 'default' | 'custom';
     fontSize?: string;
+    fontSizePercentSymbol?: string;
     fontColor?: string;
     iconSettings?: 'default' | 'custom';
     iconSize?: string;
@@ -253,6 +254,7 @@ export const DefaultNowPlayingScreenSettings: CommonSettingsOf<NowPlayingScreenS
     enabled: false,
     fontSettings: 'default',
     fontSize: '',
+    fontSizePercentSymbol: '',
     fontColor: '#CCCCCC',
     iconSettings: 'default',
     iconSize: '',
