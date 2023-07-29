@@ -25,6 +25,9 @@ export type ImageFit = 'cover' | 'contain' | 'fill';
 export type WeatherIconStyle = 'filled' | 'outline' | 'mono';
 export type BackgroundPosition = 'center' | 'top' | 'left' | 'bottom' | 'right';
 export type BackgroundOverlay = 'default' | 'customColor' | 'customGradient' | 'none';
+export declare enum MyBackgroundImage {
+    Random = "/RANDOM/"
+}
 export type DeepRequired<T> = {
     [P in keyof T]-?: DeepRequired<T[P]>;
 };

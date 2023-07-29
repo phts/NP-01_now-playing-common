@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.DefaultSettings = exports.CommonSettingsCategory = void 0;
+exports.MyBackgroundImage = exports.DefaultSettings = exports.CommonSettingsCategory = void 0;
 const ActionPanelSettings_js_1 = require("./ActionPanelSettings.js");
 const BackgroundSettings_js_1 = require("./BackgroundSettings.js");
 const IdleScreenSettings_js_1 = require("./IdleScreenSettings.js");
@@ -27,4 +27,8 @@ exports.DefaultSettings = {
     [CommonSettingsCategory.NowPlayingScreen]: NowPlayingScreenSettings_js_1.DefaultNowPlayingScreenSettings,
     [CommonSettingsCategory.IdleScreen]: IdleScreenSettings_js_1.DefaultIdleScreenSettings
 };
+var MyBackgroundImage;
+(function (MyBackgroundImage) {
+    MyBackgroundImage["Random"] = "/RANDOM/";
+})(MyBackgroundImage = exports.MyBackgroundImage || (exports.MyBackgroundImage = {}));
 //# sourceMappingURL=CommonSettings.js.map
