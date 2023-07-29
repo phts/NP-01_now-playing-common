@@ -53,10 +53,6 @@ export type WeatherIconStyle = 'filled' | 'outline' | 'mono';
 export type BackgroundPosition = 'center' | 'top' | 'left' | 'bottom' | 'right';
 export type BackgroundOverlay = 'default' | 'customColor' | 'customGradient' | 'none';
 
-export enum MyBackgroundImage {
-  Random = '/RANDOM/'
-}
-
 // https://stackoverflow.com/questions/57835286/deep-recursive-requiredt-on-specific-properties
 export type DeepRequired<T> = {
   [P in keyof T]-?: DeepRequired<T[P]>

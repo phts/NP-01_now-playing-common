@@ -1,7 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.DefaultIdleScreenSettings = void 0;
-const CommonSettings_js_1 = require("./CommonSettings.js");
 exports.DefaultIdleScreenSettings = {
     enabled: 'kiosk',
     waitTime: 30,
@@ -46,7 +45,8 @@ exports.DefaultIdleScreenSettings = {
     volumioBackgroundBlur: '',
     volumioBackgroundScale: '',
     // Background type: My background
-    myBackgroundImage: CommonSettings_js_1.MyBackgroundImage.Random,
+    myBackgroundImageType: 'random',
+    myBackgroundImage: '',
     myBackgroundRandomRefreshInterval: 10,
     myBackgroundFit: 'cover',
     myBackgroundPosition: 'center',

@@ -35,6 +35,7 @@ export interface IdleScreenSettings {
     volumioBackgroundPosition?: BackgroundPosition;
     volumioBackgroundBlur?: string;
     volumioBackgroundScale?: string;
+    myBackgroundImageType?: 'random' | 'fixed';
     myBackgroundImage?: string;
     myBackgroundRandomRefreshInterval?: number;
     myBackgroundFit?: ImageFit;

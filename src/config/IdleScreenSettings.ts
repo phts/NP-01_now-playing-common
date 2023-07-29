@@ -1,4 +1,4 @@
-import { BackgroundOverlay, BackgroundPosition, ImageFit, CommonSettingsOf, WeatherIconStyle, MyBackgroundImage } from './CommonSettings.js';
+import { BackgroundOverlay, BackgroundPosition, ImageFit, CommonSettingsOf, WeatherIconStyle } from './CommonSettings.js';
 
 export interface IdleScreenSettings {
   enabled?: 'all' | 'disabled' | 'kiosk';
@@ -52,6 +52,7 @@ export interface IdleScreenSettings {
   volumioBackgroundScale?: string;
 
   // Background type: My background
+  myBackgroundImageType?: 'random' | 'fixed';
   myBackgroundImage?: string;
   myBackgroundRandomRefreshInterval?: number;
   myBackgroundFit?: ImageFit;
@@ -133,7 +134,9 @@ export const DefaultIdleScreenSettings: CommonSettingsOf<IdleScreenSettings> = {
   volumioBackgroundScale: '',
 
   // Background type: My background
-  myBackgroundImage: MyBackgroundImage.Random,
+
+  myBackgroundImageType: 'random',
+  myBackgroundImage: '',
   myBackgroundRandomRefreshInterval: 10,
   myBackgroundFit: 'cover',
   myBackgroundPosition: 'center',
