@@ -44,6 +44,13 @@ exports.DefaultIdleScreenSettings = {
     volumioBackgroundPosition: 'center',
     volumioBackgroundBlur: '',
     volumioBackgroundScale: '',
+    // Background type: My background
+    myBackgroundImage: '',
+    myBackgroundRandomRefreshInterval: 10,
+    myBackgroundFit: 'cover',
+    myBackgroundPosition: 'center',
+    myBackgroundBlur: '',
+    myBackgroundScale: '',
     // Background type: Unsplash
     unsplashKeywords: '',
     unsplashKeywordsAppendDayPeriod: false,

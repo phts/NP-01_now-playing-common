@@ -39,7 +39,7 @@ export interface IdleScreenSettings {
   weatherCurrentIconAnimate?: boolean;
 
   // Background
-  backgroundType?: 'unsplash' | 'color' | 'volumioBackground';
+  backgroundType?: 'unsplash' | 'color' | 'volumioBackground' | 'myBackground';
 
   // Background type: color
   backgroundColor?: string;
@@ -50,6 +50,14 @@ export interface IdleScreenSettings {
   volumioBackgroundPosition?: BackgroundPosition;
   volumioBackgroundBlur?: string;
   volumioBackgroundScale?: string;
+
+  // Background type: My background
+  myBackgroundImage?: string;
+  myBackgroundRandomRefreshInterval?: number;
+  myBackgroundFit?: ImageFit;
+  myBackgroundPosition?: BackgroundPosition;
+  myBackgroundBlur?: string;
+  myBackgroundScale?: string;
 
   // Background type: Unsplash
   unsplashKeywords?: string;
@@ -123,6 +131,14 @@ export const DefaultIdleScreenSettings: CommonSettingsOf<IdleScreenSettings> = {
   volumioBackgroundPosition: 'center',
   volumioBackgroundBlur: '',
   volumioBackgroundScale: '',
+
+  // Background type: My background
+  myBackgroundImage: '',
+  myBackgroundRandomRefreshInterval: 10,
+  myBackgroundFit: 'cover',
+  myBackgroundPosition: 'center',
+  myBackgroundBlur: '',
+  myBackgroundScale: '',
 
   // Background type: Unsplash
   unsplashKeywords: '',
