@@ -80,6 +80,10 @@ export interface IdleScreenSettings {
   weatherBackgroundColorOpacity?: string;
   weatherBackgroundGradient?: string;
   weatherBackgroundGradientOpacity?: string;
+
+  // Weather area height
+  weatherAreaHeightType?: 'auto' | 'custom';
+  weatherAreaHeight?: string;
 }
 
 export const DefaultIdleScreenSettings: CommonSettingsOf<IdleScreenSettings> = {
@@ -162,5 +166,9 @@ export const DefaultIdleScreenSettings: CommonSettingsOf<IdleScreenSettings> = {
   weatherBackgroundColor: '#000000',
   weatherBackgroundColorOpacity: '',
   weatherBackgroundGradient: '',
-  weatherBackgroundGradientOpacity: ''
+  weatherBackgroundGradientOpacity: '',
+
+  // Weather area height
+  weatherAreaHeightType: 'auto',
+  weatherAreaHeight: ''
 };

@@ -57,6 +57,8 @@ export interface IdleScreenSettings {
     weatherBackgroundColorOpacity?: string;
     weatherBackgroundGradient?: string;
     weatherBackgroundGradientOpacity?: string;
+    weatherAreaHeightType?: 'auto' | 'custom';
+    weatherAreaHeight?: string;
 }
 export declare const DefaultIdleScreenSettings: CommonSettingsOf<IdleScreenSettings>;
 //# sourceMappingURL=IdleScreenSettings.d.ts.map

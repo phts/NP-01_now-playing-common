@@ -69,6 +69,9 @@ exports.DefaultIdleScreenSettings = {
     weatherBackgroundColor: '#000000',
     weatherBackgroundColorOpacity: '',
     weatherBackgroundGradient: '',
-    weatherBackgroundGradientOpacity: ''
+    weatherBackgroundGradientOpacity: '',
+    // Weather area height
+    weatherAreaHeightType: 'auto',
+    weatherAreaHeight: ''
 };
 //# sourceMappingURL=IdleScreenSettings.js.map
