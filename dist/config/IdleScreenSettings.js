@@ -44,6 +44,14 @@ exports.DefaultIdleScreenSettings = {
     volumioBackgroundPosition: 'center',
     volumioBackgroundBlur: '',
     volumioBackgroundScale: '',
+    // Background type: My background
+    myBackgroundImageType: 'random',
+    myBackgroundImage: '',
+    myBackgroundRandomRefreshInterval: 10,
+    myBackgroundFit: 'cover',
+    myBackgroundPosition: 'center',
+    myBackgroundBlur: '',
+    myBackgroundScale: '',
     // Background type: Unsplash
     unsplashKeywords: '',
     unsplashKeywordsAppendDayPeriod: false,
@@ -61,6 +69,9 @@ exports.DefaultIdleScreenSettings = {
     weatherBackgroundColor: '#000000',
     weatherBackgroundColorOpacity: '',
     weatherBackgroundGradient: '',
-    weatherBackgroundGradientOpacity: ''
+    weatherBackgroundGradientOpacity: '',
+    // Weather area height
+    weatherAreaHeightType: 'auto',
+    weatherAreaHeight: ''
 };
 //# sourceMappingURL=IdleScreenSettings.js.map

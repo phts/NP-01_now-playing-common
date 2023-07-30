@@ -39,7 +39,7 @@ export interface IdleScreenSettings {
   weatherCurrentIconAnimate?: boolean;
 
   // Background
-  backgroundType?: 'unsplash' | 'color' | 'volumioBackground';
+  backgroundType?: 'unsplash' | 'color' | 'volumioBackground' | 'myBackground';
 
   // Background type: color
   backgroundColor?: string;
@@ -50,6 +50,15 @@ export interface IdleScreenSettings {
   volumioBackgroundPosition?: BackgroundPosition;
   volumioBackgroundBlur?: string;
   volumioBackgroundScale?: string;
+
+  // Background type: My background
+  myBackgroundImageType?: 'random' | 'fixed';
+  myBackgroundImage?: string;
+  myBackgroundRandomRefreshInterval?: number;
+  myBackgroundFit?: ImageFit;
+  myBackgroundPosition?: BackgroundPosition;
+  myBackgroundBlur?: string;
+  myBackgroundScale?: string;
 
   // Background type: Unsplash
   unsplashKeywords?: string;
@@ -71,6 +80,10 @@ export interface IdleScreenSettings {
   weatherBackgroundColorOpacity?: string;
   weatherBackgroundGradient?: string;
   weatherBackgroundGradientOpacity?: string;
+
+  // Weather area height
+  weatherAreaHeightType?: 'auto' | 'custom';
+  weatherAreaHeight?: string;
 }
 
 export const DefaultIdleScreenSettings: CommonSettingsOf<IdleScreenSettings> = {
@@ -124,6 +137,16 @@ export const DefaultIdleScreenSettings: CommonSettingsOf<IdleScreenSettings> = {
   volumioBackgroundBlur: '',
   volumioBackgroundScale: '',
 
+  // Background type: My background
+
+  myBackgroundImageType: 'random',
+  myBackgroundImage: '',
+  myBackgroundRandomRefreshInterval: 10,
+  myBackgroundFit: 'cover',
+  myBackgroundPosition: 'center',
+  myBackgroundBlur: '',
+  myBackgroundScale: '',
+
   // Background type: Unsplash
   unsplashKeywords: '',
   unsplashKeywordsAppendDayPeriod: false,
@@ -143,5 +166,9 @@ export const DefaultIdleScreenSettings: CommonSettingsOf<IdleScreenSettings> = {
   weatherBackgroundColor: '#000000',
   weatherBackgroundColorOpacity: '',
   weatherBackgroundGradient: '',
-  weatherBackgroundGradientOpacity: ''
+  weatherBackgroundGradientOpacity: '',
+
+  // Weather area height
+  weatherAreaHeightType: 'auto',
+  weatherAreaHeight: ''
 };

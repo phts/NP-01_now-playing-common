@@ -28,13 +28,20 @@ export interface IdleScreenSettings {
     weatherCurrentIconMonoColor?: string;
     weatherForecastIconMonoColor?: string;
     weatherCurrentIconAnimate?: boolean;
-    backgroundType?: 'unsplash' | 'color' | 'volumioBackground';
+    backgroundType?: 'unsplash' | 'color' | 'volumioBackground' | 'myBackground';
     backgroundColor?: string;
     volumioBackgroundImage?: string;
     volumioBackgroundFit?: ImageFit;
     volumioBackgroundPosition?: BackgroundPosition;
     volumioBackgroundBlur?: string;
     volumioBackgroundScale?: string;
+    myBackgroundImageType?: 'random' | 'fixed';
+    myBackgroundImage?: string;
+    myBackgroundRandomRefreshInterval?: number;
+    myBackgroundFit?: ImageFit;
+    myBackgroundPosition?: BackgroundPosition;
+    myBackgroundBlur?: string;
+    myBackgroundScale?: string;
     unsplashKeywords?: string;
     unsplashKeywordsAppendDayPeriod?: boolean;
     unsplashMatchScreenSize?: boolean;
@@ -50,6 +57,8 @@ export interface IdleScreenSettings {
     weatherBackgroundColorOpacity?: string;
     weatherBackgroundGradient?: string;
     weatherBackgroundGradientOpacity?: string;
+    weatherAreaHeightType?: 'auto' | 'custom';
+    weatherAreaHeight?: string;
 }
 export declare const DefaultIdleScreenSettings: CommonSettingsOf<IdleScreenSettings>;
 //# sourceMappingURL=IdleScreenSettings.d.ts.map
