@@ -16,6 +16,15 @@ exports.DefaultBackgroundSettings = {
     volumioBackgroundPosition: 'center',
     volumioBackgroundBlur: '',
     volumioBackgroundScale: '',
+    // Background type: My background
+    myBackgroundImageType: 'random',
+    myBackgroundImage: '',
+    myBackgroundRandomRefreshInterval: 0,
+    myBackgroundRandomRefreshOnTrackChange: true,
+    myBackgroundFit: 'cover',
+    myBackgroundPosition: 'center',
+    myBackgroundBlur: '',
+    myBackgroundScale: '',
     // Overlay
     backgroundOverlay: 'default',
     backgroundOverlayColor: '#000000',

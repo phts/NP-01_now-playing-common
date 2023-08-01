@@ -1,7 +1,7 @@
 import { BackgroundOverlay, BackgroundPosition, ImageFit, CommonSettingsOf } from './CommonSettings.js';
 
 export interface BackgroundSettings {
-  backgroundType?: 'default' | 'albumart' | 'color' | 'volumioBackground';
+  backgroundType?: 'default' | 'albumart' | 'color' | 'volumioBackground' | 'myBackground';
 
   // Background type: color
   backgroundColor?: string;
@@ -18,6 +18,16 @@ export interface BackgroundSettings {
   volumioBackgroundPosition?: BackgroundPosition;
   volumioBackgroundBlur?: string;
   volumioBackgroundScale?: string;
+
+  // Background type: My background
+  myBackgroundImageType?: 'random' | 'fixed';
+  myBackgroundImage?: string;
+  myBackgroundRandomRefreshInterval?: number;
+  myBackgroundRandomRefreshOnTrackChange?: boolean;
+  myBackgroundFit?: ImageFit;
+  myBackgroundPosition?: BackgroundPosition;
+  myBackgroundBlur?: string;
+  myBackgroundScale?: string;
 
   // Overlay
   backgroundOverlay?: BackgroundOverlay;
@@ -45,6 +55,16 @@ export const DefaultBackgroundSettings: CommonSettingsOf<BackgroundSettings> = {
   volumioBackgroundPosition: 'center',
   volumioBackgroundBlur: '',
   volumioBackgroundScale: '',
+
+  // Background type: My background
+  myBackgroundImageType: 'random',
+  myBackgroundImage: '',
+  myBackgroundRandomRefreshInterval: 0,
+  myBackgroundRandomRefreshOnTrackChange: true,
+  myBackgroundFit: 'cover',
+  myBackgroundPosition: 'center',
+  myBackgroundBlur: '',
+  myBackgroundScale: '',
 
   // Overlay
   backgroundOverlay: 'default',
