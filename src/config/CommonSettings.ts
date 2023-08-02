@@ -4,9 +4,11 @@ import { DefaultIdleScreenSettings, IdleScreenSettings } from './IdleScreenSetti
 import { DefaultLocalizationSettings, LocalizationSettings } from './LocalizationSettings.js';
 import { DefaultNowPlayingScreenSettings, NowPlayingScreenSettings } from './NowPlayingScreenSettings.js';
 import { DefaultPerformanceSettings, PerformanceSettings } from './PerformanceSettings.js';
+import { DefaultStartupOptions, StartupOptions } from './StartupOptions.js';
 import { DefaultThemeSettings, ThemeSettings } from './ThemeSettings.js';
 
 export enum CommonSettingsCategory {
+  Startup = 'startup',
   Theme = 'theme',
   Performance = 'performance',
   Localization = 'localization',
@@ -21,6 +23,7 @@ export type CommonSettings = {
 }
 
 export const DefaultSettings: CommonSettings = {
+  [CommonSettingsCategory.Startup]: DefaultStartupOptions,
   [CommonSettingsCategory.Theme]: DefaultThemeSettings,
   [CommonSettingsCategory.Performance]: DefaultPerformanceSettings,
   [CommonSettingsCategory.Localization]: DefaultLocalizationSettings,
@@ -33,6 +36,7 @@ export const DefaultSettings: CommonSettings = {
 export type CommonSettingsOf<T extends (CommonRawSettingsOf<any> | CommonSettingsCategory)> = T extends CommonSettingsCategory ? DeepRequired<CommonRawSettingsOf<T>> : DeepRequired<T>;
 
 export type CommonRawSettingsOf<T extends CommonSettingsCategory> =
+  T extends CommonSettingsCategory.Startup ? StartupOptions :
   T extends CommonSettingsCategory.Theme ? ThemeSettings :
   T extends CommonSettingsCategory.Performance ? PerformanceSettings :
   T extends CommonSettingsCategory.Localization ? LocalizationSettings :

@@ -7,9 +7,11 @@ const IdleScreenSettings_js_1 = require("./IdleScreenSettings.js");
 const LocalizationSettings_js_1 = require("./LocalizationSettings.js");
 const NowPlayingScreenSettings_js_1 = require("./NowPlayingScreenSettings.js");
 const PerformanceSettings_js_1 = require("./PerformanceSettings.js");
+const StartupOptions_js_1 = require("./StartupOptions.js");
 const ThemeSettings_js_1 = require("./ThemeSettings.js");
 var CommonSettingsCategory;
 (function (CommonSettingsCategory) {
+    CommonSettingsCategory["Startup"] = "startup";
     CommonSettingsCategory["Theme"] = "theme";
     CommonSettingsCategory["Performance"] = "performance";
     CommonSettingsCategory["Localization"] = "localization";
@@ -19,6 +21,7 @@ var CommonSettingsCategory;
     CommonSettingsCategory["IdleScreen"] = "screen.idle";
 })(CommonSettingsCategory = exports.CommonSettingsCategory || (exports.CommonSettingsCategory = {}));
 exports.DefaultSettings = {
+    [CommonSettingsCategory.Startup]: StartupOptions_js_1.DefaultStartupOptions,
     [CommonSettingsCategory.Theme]: ThemeSettings_js_1.DefaultThemeSettings,
     [CommonSettingsCategory.Performance]: PerformanceSettings_js_1.DefaultPerformanceSettings,
     [CommonSettingsCategory.Localization]: LocalizationSettings_js_1.DefaultLocalizationSettings,
