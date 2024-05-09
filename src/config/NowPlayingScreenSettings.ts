@@ -67,6 +67,11 @@ export interface NowPlayingScreenSettings {
   // Widgets: size / margins
   playbackButtonSizeType?: 'auto' | 'custom';
   playbackButtonSize?: string;
+  seekbarStyling?: 'default' | 'custom';
+  seekbarThickness?: string;
+  seekbarShowThumb?: boolean;
+  seekbarThumbSize?: string;
+  seekbarBorderRadius?: string;
   widgetMargins?: 'auto' | 'custom';
   playbackButtonsMargin?: string;
   seekbarMargin?: string;
@@ -229,6 +234,11 @@ export const DefaultNowPlayingScreenSettings: CommonSettingsOf<NowPlayingScreenS
   // Widgets: size / margins
   playbackButtonSizeType: 'auto',
   playbackButtonSize: '',
+  seekbarStyling: 'default',
+  seekbarThickness: '',
+  seekbarBorderRadius: '',
+  seekbarShowThumb: true,
+  seekbarThumbSize: '',
   widgetMargins: 'auto',
   playbackButtonsMargin: '',
   seekbarMargin: '',

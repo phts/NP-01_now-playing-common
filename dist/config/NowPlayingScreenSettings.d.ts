@@ -45,6 +45,11 @@ export interface NowPlayingScreenSettings {
     seekbarVisibility?: boolean;
     playbackButtonSizeType?: 'auto' | 'custom';
     playbackButtonSize?: string;
+    seekbarStyling?: 'default' | 'custom';
+    seekbarThickness?: string;
+    seekbarShowThumb?: boolean;
+    seekbarThumbSize?: string;
+    seekbarBorderRadius?: string;
     widgetMargins?: 'auto' | 'custom';
     playbackButtonsMargin?: string;
     seekbarMargin?: string;

@@ -58,6 +58,11 @@ exports.DefaultNowPlayingScreenSettings = {
     // Widgets: size / margins
     playbackButtonSizeType: 'auto',
     playbackButtonSize: '',
+    seekbarStyling: 'default',
+    seekbarThickness: '',
+    seekbarBorderRadius: '',
+    seekbarShowThumb: true,
+    seekbarThumbSize: '',
     widgetMargins: 'auto',
     playbackButtonsMargin: '',
     seekbarMargin: '',
