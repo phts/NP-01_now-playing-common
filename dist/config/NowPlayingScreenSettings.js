@@ -144,6 +144,16 @@ exports.DefaultNowPlayingScreenSettings = {
         showHumidity: false,
         showWindSpeed: false,
         margin: ''
+    },
+    // Dock component: media format
+    dockedMediaFormat: {
+        enabled: false,
+        placement: 'top-left',
+        fontSettings: 'default',
+        fontSize: '',
+        fontColor: '#CCCCCC',
+        displayOrder: '',
+        margin: ''
     }
 };
 //# sourceMappingURL=NowPlayingScreenSettings.js.map

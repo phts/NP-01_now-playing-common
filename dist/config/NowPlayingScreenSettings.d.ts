@@ -124,6 +124,15 @@ export interface NowPlayingScreenSettings {
         showWindSpeed?: boolean;
         margin?: string;
     };
+    dockedMediaFormat?: {
+        enabled?: boolean;
+        placement?: DockComponentPlacement;
+        fontSettings?: 'default' | 'custom';
+        fontSize?: string;
+        fontColor?: string;
+        displayOrder?: string;
+        margin?: string;
+    };
 }
 export declare const DefaultNowPlayingScreenSettings: CommonSettingsOf<NowPlayingScreenSettings>;
 //# sourceMappingURL=NowPlayingScreenSettings.d.ts.map

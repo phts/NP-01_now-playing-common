@@ -165,6 +165,17 @@ export interface NowPlayingScreenSettings {
     showWindSpeed?: boolean;
     margin?: string;
   };
+
+  // Dock component: media format
+  dockedMediaFormat?: {
+    enabled?: boolean;
+    placement?: DockComponentPlacement;
+    fontSettings?: 'default' | 'custom';
+    fontSize?: string;
+    fontColor?: string;
+    displayOrder?: string;
+    margin?: string;
+  };
 }
 
 export const DefaultNowPlayingScreenSettings: CommonSettingsOf<NowPlayingScreenSettings> = {
@@ -328,6 +339,17 @@ export const DefaultNowPlayingScreenSettings: CommonSettingsOf<NowPlayingScreenS
     displayOrder: '',
     showHumidity: false,
     showWindSpeed: false,
+    margin: ''
+  },
+
+  // Dock component: media format
+  dockedMediaFormat: {
+    enabled: false,
+    placement: 'top-left',
+    fontSettings: 'default',
+    fontSize: '',
+    fontColor: '#CCCCCC',
+    displayOrder: '',
     margin: ''
   }
 };
