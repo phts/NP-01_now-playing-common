@@ -2,6 +2,12 @@ Common resources shared between [Volumio Now Playing plugin](https://github.com/
 
 ## Changelog
 
+0.2.3
+- `NowPlayingScreenSettings`
+  - Add seek bar styling options
+  - Add `dockedMediaFormat`options
+  - Add more props to `dockedMenu`
+
 0.2.2
 - Add `StartupOptions`
 
