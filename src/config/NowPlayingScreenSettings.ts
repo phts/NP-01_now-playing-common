@@ -94,6 +94,10 @@ export interface NowPlayingScreenSettings {
   // Dock component: menu
   dockedMenu?: {
     enabled?: boolean;
+    iconSettings?: 'default' | 'custom';
+    iconStyle?: 'ellipsis_v' | 'ellipsis_h' | 'hamburger';
+    iconSize?: string;
+    margin?: string;
   };
 
   // Dock component: action panel trigger
@@ -271,7 +275,11 @@ export const DefaultNowPlayingScreenSettings: CommonSettingsOf<NowPlayingScreenS
 
   // Dock component: menu
   dockedMenu: {
-    enabled: true
+    enabled: true,
+    iconSettings: 'default',
+    iconStyle: 'ellipsis_v',
+    iconSize: '',
+    margin: ''
   },
 
   // Dock component: action panel trigger

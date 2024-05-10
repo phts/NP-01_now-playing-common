@@ -79,7 +79,11 @@ exports.DefaultNowPlayingScreenSettings = {
     albumartBorderRadius: '',
     // Dock component: menu
     dockedMenu: {
-        enabled: true
+        enabled: true,
+        iconSettings: 'default',
+        iconStyle: 'ellipsis_v',
+        iconSize: '',
+        margin: ''
     },
     // Dock component: action panel trigger
     dockedActionPanelTrigger: {

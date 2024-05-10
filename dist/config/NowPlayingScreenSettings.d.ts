@@ -62,6 +62,10 @@ export interface NowPlayingScreenSettings {
     albumartBorderRadius?: string;
     dockedMenu?: {
         enabled?: boolean;
+        iconSettings?: 'default' | 'custom';
+        iconStyle?: 'ellipsis_v' | 'ellipsis_h' | 'hamburger';
+        iconSize?: string;
+        margin?: string;
     };
     dockedActionPanelTrigger?: {
         enabled?: boolean;
