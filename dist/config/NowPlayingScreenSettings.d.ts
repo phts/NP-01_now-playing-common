@@ -60,6 +60,7 @@ export interface NowPlayingScreenSettings {
     albumartFit?: ImageFit;
     albumartBorder?: string;
     albumartBorderRadius?: string;
+    albumartMargin?: string;
     dockedMenu?: {
         enabled?: boolean;
         iconSettings?: 'default' | 'custom';

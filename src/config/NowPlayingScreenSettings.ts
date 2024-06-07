@@ -91,6 +91,9 @@ export interface NowPlayingScreenSettings {
   albumartBorder?: string;
   albumartBorderRadius?: string;
 
+  // Albumart: margin
+  albumartMargin?: string;
+
   // Dock component: menu
   dockedMenu?: {
     enabled?: boolean;
@@ -272,6 +275,9 @@ export const DefaultNowPlayingScreenSettings: CommonSettingsOf<NowPlayingScreenS
   // ALbumart: border
   albumartBorder: '',
   albumartBorderRadius: '',
+
+  /// Albumart: margin
+  albumartMargin: '',
 
   // Dock component: menu
   dockedMenu: {

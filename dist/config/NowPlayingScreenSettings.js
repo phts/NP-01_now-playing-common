@@ -77,6 +77,8 @@ exports.DefaultNowPlayingScreenSettings = {
     // ALbumart: border
     albumartBorder: '',
     albumartBorderRadius: '',
+    /// Albumart: margin
+    albumartMargin: '',
     // Dock component: menu
     dockedMenu: {
         enabled: true,
