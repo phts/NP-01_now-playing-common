@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.DefaultSettings = exports.CommonSettingsCategory = void 0;
 const ActionPanelSettings_js_1 = require("./ActionPanelSettings.js");
 const BackgroundSettings_js_1 = require("./BackgroundSettings.js");
+const ContentRegionSettings_js_1 = require("./ContentRegionSettings.js");
 const IdleScreenSettings_js_1 = require("./IdleScreenSettings.js");
 const LocalizationSettings_js_1 = require("./LocalizationSettings.js");
 const NowPlayingScreenSettings_js_1 = require("./NowPlayingScreenSettings.js");
@@ -15,6 +16,7 @@ var CommonSettingsCategory;
     CommonSettingsCategory["Theme"] = "theme";
     CommonSettingsCategory["Performance"] = "performance";
     CommonSettingsCategory["Localization"] = "localization";
+    CommonSettingsCategory["ContentRegion"] = "contentRegion";
     CommonSettingsCategory["Background"] = "background";
     CommonSettingsCategory["ActionPanel"] = "actionPanel";
     CommonSettingsCategory["NowPlayingScreen"] = "screen.nowPlaying";
@@ -25,6 +27,7 @@ exports.DefaultSettings = {
     [CommonSettingsCategory.Theme]: ThemeSettings_js_1.DefaultThemeSettings,
     [CommonSettingsCategory.Performance]: PerformanceSettings_js_1.DefaultPerformanceSettings,
     [CommonSettingsCategory.Localization]: LocalizationSettings_js_1.DefaultLocalizationSettings,
+    [CommonSettingsCategory.ContentRegion]: ContentRegionSettings_js_1.DefaultContentRegionSettings,
     [CommonSettingsCategory.Background]: BackgroundSettings_js_1.DefaultBackgroundSettings,
     [CommonSettingsCategory.ActionPanel]: ActionPanelSettings_js_1.DefaultActionPanelSettings,
     [CommonSettingsCategory.NowPlayingScreen]: NowPlayingScreenSettings_js_1.DefaultNowPlayingScreenSettings,

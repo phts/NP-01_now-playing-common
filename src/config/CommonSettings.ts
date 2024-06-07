@@ -1,5 +1,6 @@
 import { ActionPanelSettings, DefaultActionPanelSettings } from './ActionPanelSettings.js';
 import { BackgroundSettings, DefaultBackgroundSettings } from './BackgroundSettings.js';
+import { ContentRegionSettings, DefaultContentRegionSettings } from './ContentRegionSettings.js';
 import { DefaultIdleScreenSettings, IdleScreenSettings } from './IdleScreenSettings.js';
 import { DefaultLocalizationSettings, LocalizationSettings } from './LocalizationSettings.js';
 import { DefaultNowPlayingScreenSettings, NowPlayingScreenSettings } from './NowPlayingScreenSettings.js';
@@ -12,6 +13,7 @@ export enum CommonSettingsCategory {
   Theme = 'theme',
   Performance = 'performance',
   Localization = 'localization',
+  ContentRegion = 'contentRegion',
   Background = 'background',
   ActionPanel = 'actionPanel',
   NowPlayingScreen = 'screen.nowPlaying',
@@ -27,6 +29,7 @@ export const DefaultSettings: CommonSettings = {
   [CommonSettingsCategory.Theme]: DefaultThemeSettings,
   [CommonSettingsCategory.Performance]: DefaultPerformanceSettings,
   [CommonSettingsCategory.Localization]: DefaultLocalizationSettings,
+  [CommonSettingsCategory.ContentRegion]: DefaultContentRegionSettings,
   [CommonSettingsCategory.Background]: DefaultBackgroundSettings,
   [CommonSettingsCategory.ActionPanel]: DefaultActionPanelSettings,
   [CommonSettingsCategory.NowPlayingScreen]: DefaultNowPlayingScreenSettings,
@@ -40,6 +43,7 @@ export type CommonRawSettingsOf<T extends CommonSettingsCategory> =
   T extends CommonSettingsCategory.Theme ? ThemeSettings :
   T extends CommonSettingsCategory.Performance ? PerformanceSettings :
   T extends CommonSettingsCategory.Localization ? LocalizationSettings :
+  T extends CommonSettingsCategory.ContentRegion ? ContentRegionSettings :
   T extends CommonSettingsCategory.Background ? BackgroundSettings :
   T extends CommonSettingsCategory.ActionPanel ? ActionPanelSettings :
   T extends CommonSettingsCategory.NowPlayingScreen ? NowPlayingScreenSettings :
