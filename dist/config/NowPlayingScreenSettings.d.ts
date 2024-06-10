@@ -5,6 +5,13 @@ export interface NowPlayingScreenSettings {
     artistVisibility?: boolean;
     albumVisibility?: boolean;
     mediaInfoVisibility?: boolean;
+    fontStyles?: 'default' | 'custom';
+    titleFontStyle?: string;
+    artistFontStyle?: string;
+    albumFontStyle?: string;
+    mediaInfoFontStyle?: string;
+    seekTimeFontStyle?: string;
+    metadataFontStyle?: string;
     fontSizes?: 'auto' | 'custom';
     titleFontSize?: string;
     artistFontSize?: string;

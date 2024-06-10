@@ -8,6 +8,14 @@ exports.DefaultNowPlayingScreenSettings = {
     artistVisibility: true,
     albumVisibility: true,
     mediaInfoVisibility: true,
+    // Track info: font styles
+    fontStyles: 'default',
+    titleFontStyle: '',
+    artistFontStyle: '',
+    albumFontStyle: '',
+    mediaInfoFontStyle: '',
+    seekTimeFontStyle: '',
+    metadataFontStyle: '',
     // Track info: font sizes
     fontSizes: 'auto',
     titleFontSize: '',

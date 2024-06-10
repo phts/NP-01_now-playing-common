@@ -8,6 +8,15 @@ export interface NowPlayingScreenSettings {
   albumVisibility?: boolean;
   mediaInfoVisibility?: boolean;
 
+  // Track info: font styles
+  fontStyles?: 'default' | 'custom';
+  titleFontStyle?: string;
+  artistFontStyle?: string;
+  albumFontStyle?: string;
+  mediaInfoFontStyle?: string;
+  seekTimeFontStyle?: string;
+  metadataFontStyle?: string;
+
   // Track info: font sizes
   fontSizes?: 'auto' | 'custom';
   titleFontSize?: string;
@@ -192,6 +201,15 @@ export const DefaultNowPlayingScreenSettings: CommonSettingsOf<NowPlayingScreenS
   artistVisibility: true,
   albumVisibility: true,
   mediaInfoVisibility: true,
+
+  // Track info: font styles
+  fontStyles: 'default',
+  titleFontStyle: '',
+  artistFontStyle: '',
+  albumFontStyle: '',
+  mediaInfoFontStyle: '',
+  seekTimeFontStyle: '',
+  metadataFontStyle: '',
 
   // Track info: font sizes
   fontSizes: 'auto',
