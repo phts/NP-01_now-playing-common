@@ -2,6 +2,9 @@ Common resources shared between [Volumio Now Playing plugin](https://github.com/
 
 ## Changelog
 
+0.2.5
+- Add `NowPlayingScreenSettings.fontStyles` settings
+
 0.2.4
 - Add `NowPlayingScreenSettings.albumartMargin`
 - Add `ContentRegionSettings`
