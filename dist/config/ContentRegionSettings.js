@@ -4,6 +4,8 @@ exports.DefaultContentRegionSettings = void 0;
 exports.DefaultContentRegionSettings = {
     padding: 'default',
     npBasicViewPadding: '',
-    npInfoViewPadding: ''
+    npBasicViewPaddingPortrait: '',
+    npInfoViewPadding: '',
+    npInfoViewPaddingPortrait: ''
 };
 //# sourceMappingURL=ContentRegionSettings.js.map
