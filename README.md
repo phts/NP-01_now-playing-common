@@ -2,6 +2,9 @@ Common resources shared between [Volumio Now Playing plugin](https://github.com/
 
 ## Changelog
 
+0.2.6
+- `ContentRegionSettings`: add portrait orientation options
+
 0.2.5
 - Add `NowPlayingScreenSettings.fontStyles` settings
 
