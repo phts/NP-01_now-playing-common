@@ -2,13 +2,9 @@ export interface MetadataSongInfo {
     title: string;
     description?: string | null;
     image?: string;
-    embed?: string;
-    embedContents?: {
-        linkElements: string[];
-        contentParts: string[];
-    };
     artist?: MetadataArtistInfo;
     album?: MetadataAlbumInfo;
+    lyrics?: MetadataLyrics;
 }
 export interface MetadataAlbumInfo {
     title: string;
@@ -22,6 +18,19 @@ export interface MetadataArtistInfo {
     description?: string;
     image?: string;
 }
+export type MetadataLyrics = {
+    type: 'synced';
+    lines: {
+        text: string;
+        start: number;
+    }[];
+} | {
+    type: 'plain';
+    lines: string[];
+} | {
+    type: 'html';
+    lines: string;
+};
 export interface Metadata {
     song?: MetadataSongInfo | null;
     album?: MetadataAlbumInfo | null;
