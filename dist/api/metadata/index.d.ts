@@ -1,22 +1,22 @@
 export interface MetadataSongInfo {
     title: string;
     description?: string | null;
-    image?: string;
-    artist?: MetadataArtistInfo;
-    album?: MetadataAlbumInfo;
-    lyrics?: MetadataLyrics;
+    image?: string | null;
+    artist?: MetadataArtistInfo | null;
+    album?: MetadataAlbumInfo | null;
+    lyrics?: MetadataLyrics | null;
 }
 export interface MetadataAlbumInfo {
     title: string;
-    description?: string;
-    releaseDate?: string;
-    image?: string;
-    artist?: MetadataArtistInfo;
+    description?: string | null;
+    releaseDate?: string | null;
+    image?: string | null;
+    artist?: MetadataArtistInfo | null;
 }
 export interface MetadataArtistInfo {
     name: string;
-    description?: string;
-    image?: string;
+    description?: string | null;
+    image?: string | null;
 }
 export type MetadataLyrics = {
     type: 'synced';
