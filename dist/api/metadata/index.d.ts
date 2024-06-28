@@ -18,19 +18,23 @@ export interface MetadataArtistInfo {
     description?: string | null;
     image?: string | null;
 }
-export type MetadataLyrics = {
+export interface MetadataSyncedLyrics {
     type: 'synced';
     lines: {
         text: string;
         start: number;
+        end?: number;
     }[];
-} | {
+}
+export interface MetadataPlainLyrics {
     type: 'plain';
     lines: string[];
-} | {
+}
+export interface MetadataHtmlLyrics {
     type: 'html';
     lines: string;
-};
+}
+export type MetadataLyrics = MetadataSyncedLyrics | MetadataPlainLyrics | MetadataHtmlLyrics;
 export interface Metadata {
     song?: MetadataSongInfo | null;
     album?: MetadataAlbumInfo | null;
