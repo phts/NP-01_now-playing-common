@@ -19,6 +19,7 @@ export interface NowPlayingScreenSettings {
     mediaInfoFontSize?: string;
     seekTimeFontSize?: string;
     metadataFontSize?: string;
+    syncedLyricsCurrentLineFontSize?: string;
     fontColors?: 'default' | 'custom';
     titleFontColor?: string;
     artistFontColor?: string;
@@ -26,6 +27,8 @@ export interface NowPlayingScreenSettings {
     mediaInfoFontColor?: string;
     seekTimeFontColor?: string;
     metadataFontColor?: string;
+    syncedLyricsColor?: string;
+    syncedLyricsCurrentLineColor?: string;
     textMargins?: 'auto' | 'custom';
     titleMargin?: string;
     artistMargin?: string;
