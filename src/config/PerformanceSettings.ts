@@ -11,6 +11,9 @@ export interface PerformanceSettings {
   unmountBrowseScreenOnExit?: boolean;
   unmountQueueScreenOnExit?: boolean;
   unmountVolumioScreenOnExit?: boolean;
+
+  // Metadata - synced lyrics
+  syncedLyricsDelay?: number;
 }
 
 export const DefaultPerformanceSettings: CommonSettingsOf<PerformanceSettings> = {
@@ -23,5 +26,8 @@ export const DefaultPerformanceSettings: CommonSettingsOf<PerformanceSettings> =
   unmountNowPlayingScreenOnExit: true,
   unmountBrowseScreenOnExit: false,
   unmountQueueScreenOnExit: false,
-  unmountVolumioScreenOnExit: true
+  unmountVolumioScreenOnExit: true,
+
+  // Metadata - synced lyrics
+  syncedLyricsDelay: 0
 };

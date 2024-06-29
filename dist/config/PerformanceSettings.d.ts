@@ -7,6 +7,7 @@ export interface PerformanceSettings {
     unmountBrowseScreenOnExit?: boolean;
     unmountQueueScreenOnExit?: boolean;
     unmountVolumioScreenOnExit?: boolean;
+    syncedLyricsDelay?: number;
 }
 export declare const DefaultPerformanceSettings: CommonSettingsOf<PerformanceSettings>;
 //# sourceMappingURL=PerformanceSettings.d.ts.map
