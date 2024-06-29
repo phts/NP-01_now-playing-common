@@ -2,6 +2,9 @@ Common resources shared between [Volumio Now Playing plugin](https://github.com/
 
 ## Changelog
 
+0.3.0
+- Add `NowPlayingPluginSupport` interface
+
 0.2.7
 - Add synced lyrics to song metadata and related settings
 - Add `NowPlayingMetadataProvider` interface
