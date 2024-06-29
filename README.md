@@ -2,6 +2,10 @@ Common resources shared between [Volumio Now Playing plugin](https://github.com/
 
 ## Changelog
 
+0.2.7
+- Add synced lyrics to song metadata and related settings
+- Add `NowPlayingMetadataProvider` interface
+
 0.2.6
 - `ContentRegionSettings`: add portrait orientation options
 
