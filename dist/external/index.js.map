@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../../src/external/index.ts"],"names":[],"mappings":";;;;;;;;;;;;;;;;AAAA,kEAAgD","sourcesContent":["export * from './NowPlayingMetadataProvider.js';\n"]}
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../src/external/index.ts"],"names":[],"mappings":";;;;;;;;;;;;;;;;AAAA,+DAA6C;AAC7C,kEAAgD","sourcesContent":["export * from './NowPlayingPluginSupport.js';\nexport * from './NowPlayingMetadataProvider.js';\n"]}
