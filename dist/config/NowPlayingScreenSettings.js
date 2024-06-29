@@ -24,6 +24,7 @@ exports.DefaultNowPlayingScreenSettings = {
     mediaInfoFontSize: '',
     seekTimeFontSize: '',
     metadataFontSize: '',
+    syncedLyricsCurrentLineFontSize: '',
     // Track info: font colors
     fontColors: 'default',
     titleFontColor: '#FFFFFF',
@@ -32,6 +33,8 @@ exports.DefaultNowPlayingScreenSettings = {
     mediaInfoFontColor: '#CCCCCC',
     seekTimeFontColor: '#CCCCCC',
     metadataFontColor: '#CCCCCC',
+    syncedLyricsColor: '#777777',
+    syncedLyricsCurrentLineColor: '#CCCCCC',
     // Track info: text margins
     textMargins: 'auto',
     titleMargin: '',

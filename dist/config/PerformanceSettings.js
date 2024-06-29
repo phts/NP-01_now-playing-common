@@ -10,6 +10,8 @@ exports.DefaultPerformanceSettings = {
     unmountNowPlayingScreenOnExit: true,
     unmountBrowseScreenOnExit: false,
     unmountQueueScreenOnExit: false,
-    unmountVolumioScreenOnExit: true
+    unmountVolumioScreenOnExit: true,
+    // Metadata - synced lyrics
+    syncedLyricsDelay: 0
 };
 //# sourceMappingURL=PerformanceSettings.js.map
