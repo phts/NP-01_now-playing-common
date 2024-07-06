@@ -1,5 +1,11 @@
 import { DockComponentPlacement, ImageFit, CommonSettingsOf, WeatherIconStyle } from './CommonSettings.js';
 
+export type NowPlayingScreenInfoViewLayout = {
+  type?: 'auto' | 'custom';
+  layout?: 'standard' | 'big-art' | 'ultra-wide';
+  preferBiggerAlbumArt?: boolean;
+};
+
 export interface NowPlayingScreenSettings {
   // Track info: visibility
   trackInfoVisibility?: 'default' | 'custom';
@@ -195,6 +201,9 @@ export interface NowPlayingScreenSettings {
     displayOrder?: string;
     margin?: string;
   };
+
+  // Info view layout settings
+  infoViewLayout?: NowPlayingScreenInfoViewLayout;
 }
 
 export const DefaultNowPlayingScreenSettings: CommonSettingsOf<NowPlayingScreenSettings> = {
@@ -389,5 +398,12 @@ export const DefaultNowPlayingScreenSettings: CommonSettingsOf<NowPlayingScreenS
     fontColor: '#CCCCCC',
     displayOrder: '',
     margin: ''
+  },
+
+  // Info view settings
+  infoViewLayout: {
+    type: 'auto',
+    layout: 'standard',
+    preferBiggerAlbumArt: false
   }
 };

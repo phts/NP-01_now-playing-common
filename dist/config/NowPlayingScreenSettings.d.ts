@@ -1,4 +1,9 @@
 import { DockComponentPlacement, ImageFit, CommonSettingsOf, WeatherIconStyle } from './CommonSettings.js';
+export type NowPlayingScreenInfoViewLayout = {
+    type?: 'auto' | 'custom';
+    layout?: 'standard' | 'big-art' | 'ultra-wide';
+    preferBiggerAlbumArt?: boolean;
+};
 export interface NowPlayingScreenSettings {
     trackInfoVisibility?: 'default' | 'custom';
     titleVisibility?: boolean;
@@ -148,6 +153,7 @@ export interface NowPlayingScreenSettings {
         displayOrder?: string;
         margin?: string;
     };
+    infoViewLayout?: NowPlayingScreenInfoViewLayout;
 }
 export declare const DefaultNowPlayingScreenSettings: CommonSettingsOf<NowPlayingScreenSettings>;
 //# sourceMappingURL=NowPlayingScreenSettings.d.ts.map

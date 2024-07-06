@@ -171,6 +171,12 @@ exports.DefaultNowPlayingScreenSettings = {
         fontColor: '#CCCCCC',
         displayOrder: '',
         margin: ''
+    },
+    // Info view settings
+    infoViewLayout: {
+        type: 'auto',
+        layout: 'standard',
+        preferBiggerAlbumArt: false
     }
 };
 //# sourceMappingURL=NowPlayingScreenSettings.js.map
