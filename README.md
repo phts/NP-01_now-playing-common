@@ -2,6 +2,9 @@ Common resources shared between [Volumio Now Playing plugin](https://github.com/
 
 ## Changelog
 
+0.3.1
+- Add Info View layout settings
+
 0.3.0
 - Add `NowPlayingPluginSupport` interface
 
