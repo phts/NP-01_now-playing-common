@@ -2,6 +2,9 @@ Common resources shared between [Volumio Now Playing plugin](https://github.com/
 
 ## Changelog
 
+0.3.3
+- `NowPlayingMetadataProvider` v1.1.0: add `duration` arg to `getSongInfo()`
+
 0.3.2
 - Add Info view tab to `StartupOptions`
 
