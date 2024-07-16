@@ -1,5 +1,5 @@
 import { NowPlayingMetadataProvider } from './NowPlayingMetadataProvider.js';
 export interface NowPlayingPluginSupport {
-    getNowPlayingMetadataProvider: () => NowPlayingMetadataProvider | null;
+    getNowPlayingMetadataProvider: <NowPlayingMetadataProviderVersion>() => NowPlayingMetadataProvider<NowPlayingMetadataProviderVersion> | null;
 }
 //# sourceMappingURL=NowPlayingPluginSupport.d.ts.map
